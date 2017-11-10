@@ -1,0 +1,5 @@
+﻿  abcde.c
+c:\users\arkadiusz\desktop\język c\3.7\projekt1\abcde.c(18): warning C4474: „printf”: przekazano za dużo argumentów dla ciągu formatowania
+  c:\users\arkadiusz\desktop\język c\3.7\projekt1\abcde.c(18): note: symbole zastępcze i ich parametry oczekują 1 argumentów ze zmienną liczbą argumentów, ale podano następującą liczbę zmiennych argumentów: 2
+  Projekt1.vcxproj -> C:\Users\Arkadiusz\Desktop\język C\3.7\Projekt1\Debug\Projekt1.exe
+  Projekt1.vcxproj -> C:\Users\Arkadiusz\Desktop\język C\3.7\Projekt1\Debug\Projekt1.pdb (Partial PDB)

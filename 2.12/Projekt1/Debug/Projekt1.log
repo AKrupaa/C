@@ -1,0 +1,6 @@
+﻿  programc1.c
+c:\users\arkadiusz\desktop\język c\2.12\projekt1\programc1.c(38): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: zobacz deklarację „getch”
+c:\users\arkadiusz\desktop\język c\2.12\projekt1\programc1.c(11): warning C4101: "x1": lokalna zmienna, do której nie istnieje odwołanie
+c:\users\arkadiusz\desktop\język c\2.12\projekt1\programc1.c(11): warning C4101: "x0": lokalna zmienna, do której nie istnieje odwołanie
+c:\users\arkadiusz\desktop\język c\2.12\projekt1\programc1.c(11): warning C4101: "x2": lokalna zmienna, do której nie istnieje odwołanie

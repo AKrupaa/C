@@ -1,0 +1,35 @@
+﻿  as.c
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(12): warning C4473: „scanf”: przekazano niewystarczającą liczbę argumentów dla ciągu formatowania
+  c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(12): note: symbole zastępcze i ich parametry oczekują 1 argumentów ze zmienną liczbą argumentów, ale podano następującą liczbę zmiennych argumentów: 0
+  c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(12): note: brakujący argument 1 o zmiennej liczbie parametrów jest wymagany w ciągu formatu „%f”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(12): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: zobacz deklarację „scanf”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(13): warning C4473: „scanf”: przekazano niewystarczającą liczbę argumentów dla ciągu formatowania
+  c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(13): note: symbole zastępcze i ich parametry oczekują 1 argumentów ze zmienną liczbą argumentów, ale podano następującą liczbę zmiennych argumentów: 0
+  c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(13): note: brakujący argument 1 o zmiennej liczbie parametrów jest wymagany w ciągu formatu „%f”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(13): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: zobacz deklarację „scanf”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(14): warning C4473: „scanf”: przekazano niewystarczającą liczbę argumentów dla ciągu formatowania
+  c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(14): note: symbole zastępcze i ich parametry oczekują 1 argumentów ze zmienną liczbą argumentów, ale podano następującą liczbę zmiennych argumentów: 0
+  c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(14): note: brakujący argument 1 o zmiennej liczbie parametrów jest wymagany w ciągu formatu „%f”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(14): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: zobacz deklarację „scanf”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(15): warning C4473: „scanf”: przekazano niewystarczającą liczbę argumentów dla ciągu formatowania
+  c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(15): note: symbole zastępcze i ich parametry oczekują 1 argumentów ze zmienną liczbą argumentów, ale podano następującą liczbę zmiennych argumentów: 0
+  c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(15): note: brakujący argument 1 o zmiennej liczbie parametrów jest wymagany w ciągu formatu „%f”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(15): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: zobacz deklarację „scanf”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(16): warning C4473: „scanf”: przekazano niewystarczającą liczbę argumentów dla ciągu formatowania
+  c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(16): note: symbole zastępcze i ich parametry oczekują 1 argumentów ze zmienną liczbą argumentów, ale podano następującą liczbę zmiennych argumentów: 0
+  c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(16): note: brakujący argument 1 o zmiennej liczbie parametrów jest wymagany w ciągu formatu „%f”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(16): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: zobacz deklarację „scanf”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(17): warning C4473: „scanf”: przekazano niewystarczającą liczbę argumentów dla ciągu formatowania
+  c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(17): note: symbole zastępcze i ich parametry oczekują 1 argumentów ze zmienną liczbą argumentów, ale podano następującą liczbę zmiennych argumentów: 0
+  c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(17): note: brakujący argument 1 o zmiennej liczbie parametrów jest wymagany w ciągu formatu „%f”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(17): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: zobacz deklarację „scanf”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(43): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: zobacz deklarację „getch”
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(19): warning C4101: "sr": lokalna zmienna, do której nie istnieje odwołanie
+c:\users\arkadiusz\desktop\język c\2.13\projekt1\as.c(19): warning C4101: "min": lokalna zmienna, do której nie istnieje odwołanie

@@ -42,9 +42,9 @@ int main()
 	tab[i++]='0';
 	
 	//wypisanie
-	for(int q=0;q<i;q++)
-	printf("%c", tab[q]);
-	printf("\n");
+//	for(int q=0;q<i;q++)
+	//printf("%c", tab[q]);
+	//printf("\n");
 	//zamiana wielkich na male
 	for(int q=0;q<i;q++)
 	{
@@ -55,9 +55,9 @@ int main()
 	}
 	
 	//wypisanie
-	for(int q=0;q<i;q++)
-	printf("%c", tab[q]);
-	printf("\n");
+//	for(int q=0;q<i;q++)
+//	printf("%c", tab[q]);
+//	printf("\n");
 	
 	int flaga=0;
 	int wyraz=0;
@@ -66,7 +66,7 @@ int main()
 		flaga=0;
 		if(tab[q]=='0')
 		{
-			for(int w=q+1;tab[w]!=0&&flaga==0;w++)
+			for(int w=q+1;tab[w]!='0'&&flaga==0&&tab[w]!=0;w++)
 			{
 				if((tab[w]=='a')||(tab[w]=='e')||(tab[w]=='u')||(tab[w]=='o')||(tab[w]=='i')||(tab[w]=='y'))
 				{

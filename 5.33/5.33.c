@@ -11,8 +11,8 @@ int main()
 	int i=0;
 	int o=0;
 	const int max=100;
-	int tab1[max];
-	int tab2[max];
+	int tab1[100];
+	int tab2[100];
 	int liczba;
 	printf("Wprowadz pierwszy ciag liczbowy (max %i) liczb po spacji: \n", max);
 	scanf("%i",&liczba);
@@ -61,7 +61,7 @@ int main()
 	// to ma wypisac 1, 3 bo sie powtarza w obu tablicach.
 
 		int suma;
-		int tabNowa[max];
+		int tabNowa[100];
 		int p=0;
 		for(int q=0;q<i;q++)
 		{

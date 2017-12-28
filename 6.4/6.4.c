@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 /*
 Zadeklaruj trzy macierze o wielkosci 4×4 (A, B i C). 
 Wartosci macierzy A i B wybierz losowo, macierz C przyjmij jednostkowa. 

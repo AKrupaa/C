@@ -35,12 +35,12 @@ int main()
 			}
 		}
 	}
-	printf("suma: %i", suma);
+	printf("\n%i ", suma);
 	suma=0;
 	
 	
-	for(int i=0;i<5;i++)
+	for(int i=0;i<SIZE;i++)
  	suma+=tab[i][SIZE-1-i];
-	printf("%i", suma); //z prawej do lewej - przekatna...
+	printf("%i ", suma); //z prawej do lewej - przekatna...
 	return 0;
 }

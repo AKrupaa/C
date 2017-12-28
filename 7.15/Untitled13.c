@@ -9,9 +9,7 @@ Uwaga: zak³adamy, ¿e liczby ujemne nie s¹ ani pierwsze, ani z³o¿one.
 #include <stdio.h>
 
 int czy_pierwsza(int a)
-{
-	if(a>0)
-	{
+{	
 		int flaga=0;
 		int ile=0;
 		for(int i=1;i<=a&&flaga==0;i++)
@@ -33,7 +31,6 @@ int czy_pierwsza(int a)
 		{
 			return 0;
 		}
-	}	
 }
 
 int main()
@@ -45,6 +42,8 @@ int main()
 	scanf("%i",&min);
 	printf("Wprowadz max: ");
 	scanf("%i",&max);
+	if(min<0)
+	min=2;
 	for(int i=min;i<max;i++)
 	{
 		if(czy_pierwsza(i)==1)

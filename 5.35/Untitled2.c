@@ -12,7 +12,7 @@ int main()
 {
 	int i=0;
 	const int max=1000;
-	int tab1[max];
+	int tab1[1000];
 	int tab2[2];
 	int liczba;
 	printf("Wprowadzenie zera oznacza zakonczenie ciagu.\n");

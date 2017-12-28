@@ -52,7 +52,7 @@ int main()
 			if(MAX<max)
 			MAX=max;
 			
-			if(j==5)
+			if(j==SIZE)
 			roznica[a++]=(MAX-MIN);
 		}
 	}

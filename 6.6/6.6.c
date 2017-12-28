@@ -13,6 +13,7 @@ Operator * oznacza mnozenie macierzy.
 #include <stdlib.h>
 #define SIZE 4
 
+
 int main()
 {
 	int A[4][4];
@@ -24,8 +25,8 @@ int main()
 	{
 		for(int j=0;j<SIZE;j++)
 		{
-			A[i][j]=0+rand()%20;
-			B[i][j]=0+rand()%20;	
+			A[i][j]=1+rand()%5;
+			B[i][j]=1+rand()%5;	
 		}
 	}
 	
@@ -74,14 +75,13 @@ int main()
 	{
 		for(int j=0;j<SIZE;j++)
 		{
-			for(int k=0;k<5;k++)
+			suma=0;
+			for(int k=0;k<SIZE;k++)
 			{
-				suma=0;
 				suma+=A[i][k]*B[k][j];
 			}
 			ArazyB[i][j]=suma;
 		}
-			
 	}
 	
 		printf("\nMacierz A*B: -------\n");
@@ -91,5 +91,73 @@ int main()
 			printf("%4d ", ArazyB[i][a]);
 		printf("\n");		
 	}
+	
+	int BrazyA[4][4];
+	for(int i=0;i<SIZE;i++)
+	{
+		for(int j=0;j<SIZE;j++)
+		{
+			suma=0;
+			for(int k=0;k<SIZE;k++)
+			{
+				suma+=B[i][k]*A[k][j];
+			}
+			BrazyA[i][j]=suma;
+		}	
+	}
+	
+			printf("\nMacierz B*A: -------\n");
+	for(int i=0;i<SIZE;i++)
+	{
+		for(int a=0;a<SIZE;a++)
+			printf("%4d ", BrazyA[i][a]);
+		printf("\n");		
+	}
+	
+	
+		int ArazyC[4][4];
+	for(int i=0;i<SIZE;i++)
+	{
+		for(int j=0;j<SIZE;j++)
+		{
+			suma=0;
+			for(int k=0;k<SIZE;k++)
+			{
+				suma+=A[i][k]*C[k][j];
+			}
+			ArazyC[i][j]=suma;
+		}	
+	}
+	
+			printf("\nMacierz A*C: -------\n");
+	for(int i=0;i<SIZE;i++)
+	{
+		for(int a=0;a<SIZE;a++)
+			printf("%4d ", ArazyC[i][a]);
+		printf("\n");		
+	}
+	
+		int CrazyA[4][4];
+	for(int i=0;i<SIZE;i++)
+	{
+		for(int j=0;j<SIZE;j++)
+		{
+			suma=0;
+			for(int k=0;k<SIZE;k++)
+			{
+				suma+=C[i][k]*A[k][j];
+			}
+			CrazyA[i][j]=suma;
+		}	
+	}
+	
+			printf("\nMacierz C*A: -------\n");
+	for(int i=0;i<SIZE;i++)
+	{
+		for(int a=0;a<SIZE;a++)
+			printf("%4d ", CrazyA[i][a]);
+		printf("\n");		
+	}
+	
 	return 0;
 }

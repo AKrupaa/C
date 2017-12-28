@@ -1,66 +1,110 @@
-/*
-Napisz program, który pobierze od u¿ytkownika liczby (nie wiêcej ni¿ 1000), a nastêpnie znajdzie najd³u¿szy podci¹g niemonotoniczny. 
-Program ma wyœwietliæ, w osobnych liniach: 
-liczbê elementów nale¿¹cych do najd³u¿szego podci¹gu, liczbê znalezionych takich podci¹gów, 
-nastêpnie dla ka¿dego znalezionego podci¹gu indeks pierwszego elementu i po spacji wartoœci wszystkich elementów do niego nale¿¹cych. 
-Pojawienie siê wartoœci 0 na wejœciu bêdzie oznacza³o zakoñczenie ci¹gu. 
-PodpowiedŸ: minimalna d³ugoœæ ci¹gu, przy jakiej mo¿na stwierdziæ niemonotonicznoœæ, to 3 elementy.
-*/
-
-#include <stdio.h>
-
+//ciag niemonotoniczny
+#include<stdio.h>
 int main()
 {
-	const int max=1000;
-	int tab[max];
-	int liczba;
-	int i=0;
-	scanf("%i", &liczba);
-	if(liczba!=0)
-		tab[i++]=liczba;
-	else
+	float tab[1000];
+	int i, k, dlugosc = 1, ilosc_ciagow = 0, elementy = 1, max_elementy = 0, wspolrzedna[1000];
+	puts("wprowadzaj kolene liczby, a program wskaze nadluzszy niemonotoniczny ciag, wprowadzenie wartosci \"0\" zatrzyma pobieranie danych");
+	do 
 	{
-		printf("Wprowadziles 0 (zero) na samym poczatku -> brak danych\n Nastepuje wyjscie z programu.");
-		return 0;
-	} 
-	while(liczba!=0&&i<max)
+		scanf_s("%f", &tab[0]);
+	} while (tab[0] == 0);
+	for (i = 1;i < 1000;i++)
 	{
-		scanf("%i",&liczba);
-		if(liczba!=0)
-		tab[i++]=liczba;
+		scanf_s("%f", &tab[i]);
+		if (tab[i] == 0) i = 1000;
+		else dlugosc++;
 	}
-	
-	//znajdz podciag niemonotoniczny czyli  1 0 1 0 1 0 3 -1 0 1 2 3
-									// 1-0-1=0 0-1-0<0 1-0-1=0 0-3--1<0 3--1-0>0
-	//-1  0 1 czyli 0>-1 i 0<1 				1 0 4 -8 14 -1 100 -200 
-										//  1 0 a<a+1 a>a+1
-	int start=0;
-	int stop=0;
-	int temp=0;
-	int licznik=0;
-	for(int a=0;a<i;a++)
+	for (i = dlugosc;i < 1000;i++)
 	{
-			if(a+1 - a> 0&&a+1 - a < 0)
+		tab[i] = 0;
+	}
+	for (i = 1;i < dlugosc + 1;i++)
+	{
+		if (tab[i + 1] != 0)
+		{
+			if ((tab[i] > tab[i - 1] && tab[i] > tab[i + 1]) || (tab[i] < tab[i - 1] && tab[i] < tab[i + 1]))
 			{
-				licznik++;
+				elementy++;
+				if (elementy > max_elementy) max_elementy = elementy;
 			}
-			else
+			else if ((tab[i - 1] > tab[i - 2] && tab[i - 1] > tab[i]) || (tab[i - 1] < tab[i - 2] && tab[i - 1] < tab[i]))
 			{
-				if(licznik>temp)
-				{
-					temp=licznik;
-					start=a+2-licznik;
-					stop=a+2;
-				}
-				licznik=0;
+				elementy++;
+				if (elementy > max_elementy) max_elementy = elementy;
+				elementy = 1;
 			}
+			else elementy = 1;
 		}
-	
-	printf("Najdluzszy ciag niemonotoniczny zaczyna sie w %i\n", start);
-	printf("Koncowy indeks %i\n", stop);
-	printf("Elementy tego ciagu to: ");
-	for(start;start<=stop;start++) printf("%i ", tab[start]);
-	
-	getchar();
+		else if (tab[i] != 0)
+		{
+			if ((tab[i - 1] > tab[i - 2] && tab[i - 1] > tab[i]) || (tab[i - 1] < tab[i - 2] && tab[i - 1] < tab[i]))
+			{
+				elementy++;
+				if (elementy > max_elementy) max_elementy = elementy;
+			}
+			else elementy = 1;
+		}
+	}
+	elementy = 1;
+	for (i = 1;i < dlugosc + 1;i++)
+	{
+		if (tab[i + 1] != 0)
+		{
+			if ((tab[i] > tab[i - 1] && tab[i] > tab[i + 1]) || (tab[i] < tab[i - 1] && tab[i] < tab[i + 1]))
+			{
+				elementy++;
+				if (max_elementy == elementy)
+				{
+					ilosc_ciagow++;
+					wspolrzedna[ilosc_ciagow - 1] = i - max_elementy + 1;
+					elementy = 1;
+				}
+			}
+			else if ((tab[i - 1] > tab[i - 2] && tab[i - 1] > tab[i]) || (tab[i - 1] < tab[i - 2] && tab[i - 1] < tab[i]))
+			{
+				elementy++;
+				if (max_elementy == elementy)
+				{
+					ilosc_ciagow++;
+					wspolrzedna[ilosc_ciagow - 1] = i - max_elementy + 1;	
+					elementy = 1;
+				}
+				elementy = 1;
+			}
+			else elementy = 1;
+		}
+		else if (tab[i] != 0)
+		{
+			if ((tab[i - 1] > tab[i - 2] && tab[i - 1] > tab[i]) || (tab[i - 1] < tab[i - 2] && tab[i - 1] < tab[i]))
+			{
+				elementy++;
+				if (max_elementy == elementy)
+				{
+					ilosc_ciagow++;
+					wspolrzedna[ilosc_ciagow - 1] = i - max_elementy + 1;
+					elementy = 1;
+				}
+				elementy = 1;
+			}
+			else elementy = 1;
+		}
+	}
+	if (max_elementy > 2)
+	{
+		printf("liczba elementow nalezacych do najdluzszego podciagu niemonotonicznego:%d\n", max_elementy);
+		printf("liczba takich podciagow:%d\n", ilosc_ciagow);
+		for (i = 0;i < ilosc_ciagow;i++)
+		{
+			printf("indeks 1 elementu %d podciagu to:%d", i + 1, wspolrzedna[i]);
+			for (k = wspolrzedna[i];k < wspolrzedna[i] + max_elementy;k++)
+			{
+				printf(" %.3f", tab[k]);
+			}
+			printf("\n");
+		}
+	}
+	else puts("nie ma zadnego niemotonicznego podciagu w danym ciagu");
+	system("pause");
 	return 0;
 }

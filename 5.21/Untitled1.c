@@ -7,7 +7,7 @@ Pojawienie siê wartoœci 0 na wejœciu bêdzie oznacza³o zakoñczenie ci¹gu. */
 int main()
 {
 	const int max=1000;
-	int tab[max];
+	int tab[1000];
 	int i=0;
 	int liczba;
 	int suma=0;

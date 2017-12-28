@@ -12,7 +12,9 @@ W przypadku, kiedy nie bêdzie takiej komórki w tablicy program ma wyœwietliæ nap
 
 int main()
 {
+	printf("podaj liczby: \n");
 	int liczba;
+	int ile=0;
 	int tab[10][10];
 	for(int i=0;i<SIZE;i++)
 	{
@@ -22,5 +24,49 @@ int main()
 			tab[i][j]=liczba;
 		}
 	}
+	
+	for(int i=1;i<SIZE-1;i++)
+	{
+		for(int j=1;j<SIZE-1;j++)
+		{
+			liczba=tab[i][j];
+			if(tab[i-1][j-1]>liczba)
+			{
+				if(tab[i-1][j]>liczba)
+				{
+					if(tab[i-1][j+1]>liczba)
+					{
+						if(tab[i][j-1]>liczba)
+						{
+							if(tab[i][j+1]>liczba)
+							{
+								if(tab[i+1][j-1]>liczba)
+								{
+									if(tab[i+1][j]>liczba)
+									{
+										if(tab[i+1][j+1]>liczba)
+										{
+											ile++;
+											printf("(x: %i, y: %i)\n",j,i);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			
+		}
+	}
+	if(ile>0)
+	{
+		printf("Znalezionych minimow: %i", ile);
+	}
+	if(ile==0)
+	{
+		printf("Brak");
+	}
+	
 	return 0;	
 }

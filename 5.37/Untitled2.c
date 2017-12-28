@@ -9,7 +9,7 @@ w których pojawi³a siê wartoœæ minimalna i maksymalna.
 int main()
 {
 	const int max=1000;
-	int tab[max];
+	int tab[1000];
 	int liczba;
 	int i=0;
 	printf("Wprowadzenie wartosci 0 (zero) oznacza zakonczenie ciagu!\n");

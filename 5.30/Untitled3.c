@@ -9,7 +9,7 @@ int main()
 
 	int i=0;
 	const int max= 1000;
-	int tab[max];
+	int tab[1000];
 	int liczba;
 	printf("Wprowadz (max %i) liczb po spacji: \n", max);
 	scanf("%i",&liczba);

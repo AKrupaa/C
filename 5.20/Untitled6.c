@@ -8,7 +8,7 @@ Przed i po myœlniku ma siê pojawiæ dok³adnie jedna spacja. Pojawienie siê wartoœ
 int main()
 {
 		const int max=1000;
-        int tab[max];
+        int tab[1000];
         int liczba=4;
         int i=0;
         //i jest informacja o rozmiarze tablicy

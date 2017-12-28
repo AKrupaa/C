@@ -10,8 +10,8 @@ ile elementów w drugim ci¹gu ma wartoœæ wiêksz¹ od niego.
 int main()
 {
 	const int max=100;
-	int tab1[max];
-	int tab2[max];
+	int tab1[100];
+	int tab2[100];
 	int liczba;
 	int i=0;
 	int o=0;

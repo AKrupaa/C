@@ -11,9 +11,9 @@ Jeœli dane wejœciowe nie bêd¹ spe³nia³y za³o¿eñ zadania, program ma wyœwietliæ n
 int main()
 {
 	const int max=10;
-	int tab[max];
-	int tabP[max];
-	int tabN[max];
+	int tab[10];
+	int tabP[10];
+	int tabN[10];
 	int p=0;
 	int liczba;
 	int suma=0;

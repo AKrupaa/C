@@ -4,12 +4,25 @@
 //w kolejnych wierszach, wyswietl wartosc najmniejsza, najwieksza oraz wartosc srednia (z dokladnoscia do dwóch miejsc po przecinku).
 int main()
 {
-	float a,max,min,sr;
+	float max,min,a;
+	float suma;
 	int i;
-	for(i=0;i<100;i++)
-	{
-		printf("Wprowadz liczbe%f: ", i+1);
+	
+		printf("Wprowadz liczbe 1: ");
 		scanf("%f",&a);
+		min=a;
+		max=a;
+		suma=a;
+		
+	for(i=1;i<100;i++)
+	{
+		printf("Wprowadz liczbe %d: ", i+1);
+		scanf("%f",&a);
+		if(min>a) min=a;
+		if(max<a) max=a;
+		suma=suma+a;
 	}
+	
+	printf("Wartosc najmniejsza= %f\nWartosc najwieksza= %f\nSrednia= %.2f", min,max,suma/100);
 	return 0;
 }

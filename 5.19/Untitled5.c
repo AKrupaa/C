@@ -11,7 +11,7 @@ int main()
 	printf("Program konczy wczytywanie danych gdy napotka -1\n");
 	
 		const int max=1000;
-        int tab[max];
+        int tab[1000];
         int i=0, j, liczba=1;
         //i jest informacja o rozmiarze tablicy
        	int MIN_W,MAX_W;

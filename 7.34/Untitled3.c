@@ -8,6 +8,24 @@ to w to miejsce ma zostaæ pobrana odpowiednio wartoœæ ostatniego lub pierwszego 
 */
 
 
+int clamp(int v, int lo, int hi) //hi==i-licznik; lo==0 //v to indeks tabeli
+{
+	if(v>=lo&&v<hi)
+	{
+		return v;
+	}
+	
+	if(v<lo)
+	{
+		return lo;
+	}
+	
+	if(v>=hi)
+	{
+		return hi-1;
+	}
+}
+
 #include <stdio.h>
 
 int main()
@@ -55,22 +73,9 @@ int main()
 		tab2[o++]=liczba;
 	}
 	
-	int indeks;
 	for(int q=0;q<i;q++)
 	{
-		indeks=tab1[q];
-		if(indeks>=0&&indeks<o)
-		{
-			printf("%i ", tab2[indeks]);
-		}
-		if(indeks>=o)
-		{
-			printf("%i ", tab2[o-1]);
-		}
-		if(indeks<0)
-		{
-			printf("%i ", tab2[0]);
-		}
+		printf("%i ", tab2[clamp(tab1[q],0,o)]);
 	}
 
 

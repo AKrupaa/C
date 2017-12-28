@@ -12,8 +12,8 @@ int main()
 	int i=0;
 	int o=0;
 	const int max=100;
-	int tab1[max];
-	int tab2[max];
+	int tab1[100];
+	int tab2[100];
 	int liczba;
 	printf("Wprowadz pierwszy ciag liczbowy (max %i) liczb po spacji: \n", max);
 	scanf("%i",&liczba);

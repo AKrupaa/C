@@ -15,7 +15,7 @@ D³ugoœæ ci¹gu wejœciowego nie przekroczy 1000 znaków.
 int main()
 {
 	const int max=1000;
-	char tab[max];
+	char tab[1000];
 	int i=0;
 	char znak;
 	printf("Wprowadz tekst zawierajacy wylacznie male i wielkie litery lacinskie\n");
@@ -56,7 +56,7 @@ int main()
 	}
 	
 	licznik=0;
-	char tabzwyrazami[max];
+	char tabzwyrazami[1000];
 	int p=0;
 	int kiedy=0;
 	for(int w=0;w<i;w++)

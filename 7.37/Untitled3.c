@@ -15,7 +15,7 @@ int main()
     //printf("strlen %d\n", strlen(tab)); //licze poprawnie
     printf("myatoi: %d\n", my_atoi(tab));
     //printf("atoi: %d\n", atoi(tab));
-    printf("myatof: %f\n", my_atof(tab));
+    printf("myatof: %.4f\n", my_atof(tab));
     //printf("atof: %f", atof(tab));
 	return 0;
 }

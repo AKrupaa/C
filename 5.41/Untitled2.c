@@ -13,8 +13,8 @@ to w to miejsce ma zostaæ pobrana odpowiednio wartoœæ ostatniego lub pierwszego 
 int main()
 {
 	const int max=100;
-	int tab1[max];
-	int tab2[max];
+	int tab1[100];
+	int tab2[100];
 	int liczba;
 	int i=0;
 	int o=0;
@@ -56,20 +56,20 @@ int main()
 	}
 	
 	int indeks;
-	for(int q=0;q<o;q++)
+	for(int q=0;q<i;q++)
 	{
-		indeks=tab2[q];
-		if(indeks>=0&&indeks<i)
+		indeks=tab1[q];
+		if(indeks>=0&&indeks<o)
 		{
-			printf("%i ", tab1[indeks]);
+			printf("%i ", tab2[indeks]);
 		}
-		if(indeks>=i)
+		if(indeks>=o)
 		{
-			printf("%i ", tab1[i-1]);
+			printf("%i ", tab2[o-1]);
 		}
 		if(indeks<0)
 		{
-			printf("%i ", tab1[0]);
+			printf("%i ", tab2[0]);
 		}
 	}
 

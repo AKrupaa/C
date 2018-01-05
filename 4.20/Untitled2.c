@@ -21,7 +21,6 @@ int main()
 		{
 			//printf("%i modulo %i=0\n",liczba,i);
 			suma+=1;
-			
 		}
 	}
 	if(liczba>1)

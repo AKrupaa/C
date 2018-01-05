@@ -7,7 +7,7 @@ int main()
 	int i;
 	int zarodek;
 	int suma=0;
-   	zarodek=4;
+	zarodek=4;
     srand(zarodek);
     for(i=0;i<10;i++)
     {

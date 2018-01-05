@@ -19,7 +19,7 @@ int main()
 	int i;
 	
 	printf("Gra zgadywanie!\nZgadnij wylosowana liczbe z zakresu 0-100.\nMasz 10 szans!\n");
-	printf("%i\n",x);
+	//printf("%i\n",x);
 	while(szansa!=10&&x!=wybor)
 	{
 		printf("\nPozostalo %i prob!\n",10-szansa);

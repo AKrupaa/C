@@ -14,7 +14,7 @@ int main()
 {
 	int i=0;
 	const int max=1000;
-	int tab[max];
+	int tab[1000];
 	int liczba;
 	printf("Wprowadz liczby oddzielajac ja spacja: \n");
 	scanf("%i",&liczba);

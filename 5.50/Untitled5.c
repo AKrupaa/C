@@ -52,7 +52,10 @@ int main()
 	}
 	
 	for(int k=0;k<n;k++)
-	printf("%i ",tabA[k]);
+	{
+		printf("%i ",tabA[k]);
+	}
+	
 	
  
 	return 0;   

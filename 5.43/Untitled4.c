@@ -10,7 +10,7 @@ S³owo jest palindromem wtedy, gdy czytane od pocz¹tku do koñca i od koñca do poc
 int main()
 {
 	const int max=100;
-	int tab1[max];
+	int tab1[100];
 	int liczba;
 	int i=0;
 	printf("Wprowadzenie wartosci 0 (zero) oznacza zakonczenie ciagu!\n");

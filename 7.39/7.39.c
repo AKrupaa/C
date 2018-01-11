@@ -49,50 +49,71 @@ int main()
 	int ostatni=search_end(tab,tab2);
 	printf("%i\n",pierwszy);
 	printf("%i\n",ostatni);
-//	int dlugosc=ostatni-pierwszy;
-//	printf("%i\n",dlugosc);
 	return 0;
 }
 
 int search(char tab[], char tab2[])
 {
-	char znakp=tab2[0];	
-	
+	int dlugosc1=strlen(tab);
+	int dlugosc2=strlen(tab2);
+	int ile=0;
 	int flaga=0;
-	int dl=strlen(tab);
-	for(int i=0;i<dl&&flaga==0;i++)
-	{
-		if(tab[i]==znakp)
-		{
-			flaga=1;
-			return i; //czyli indeks pierwszego znaku
-		}
-	}
+	int na_ktorym_miejscu;
+	//abcde
+	//cd
 	
-	if(flaga==0)
-	return -1;
+	for(int i=0;i<dlugosc1&&flaga!=1;i++)
+	{
+		if(tab[i]==tab2[0])
+		{
+		
+			for(int j=0;j<dlugosc2;j++)
+			{
+				if(tab2[j]==tab[i+j])
+				ile++;
+			}
+			if(ile==dlugosc2)
+			{
+				flaga=1;
+				na_ktorym_miejscu=i;
+			}
+			else
+			ile=0;
+		}
+		
+		
+	}
+	return na_ktorym_miejscu;
 }
 
 
 int search_end(char tab[], char tab2[])
 {
-	//zle
-	char znakk=tab2[0];
-	int poczatek=search(tab,tab2);
-	
-	int koniec1=strlen(tab);
-	
+	int dlugosc1=strlen(tab);
+	int dlugosc2=strlen(tab2);
+	int ile=0;
 	int flaga=0;
-	int dl=strlen(tab);
-	for(int i=koniec1;i>=poczatek&&flaga==0;i++)
+	int na_ktorym_miejscu;
+	//abcde 
+	//cd
+	
+	for(int i=dlugosc1-1;i>=0&&flaga!=1;i--)
 	{
-		if(tab[i]==znakk)
+		if(tab[i]==tab2[dlugosc2-1])
 		{
-			flaga=1;
-			return i; //czyli indeks ostatniego znalezionego znaku
+			for(int j=0;j<dlugosc2;j++)
+			{
+				if(tab2[dlugosc2-1-j]==tab[i-j])
+				ile++;
+			}
+			if(ile==dlugosc2)
+			{
+				flaga=1;
+				na_ktorym_miejscu=i-dlugosc2+1;
+			}
+			else
+			ile=0;
 		}
 	}
-	
-	if(flaga==0)
-	return -1;
+	return na_ktorym_miejscu;		
 }

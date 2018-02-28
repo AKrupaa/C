@@ -13,7 +13,6 @@ int main()
 		printf("%i\n",d);
 	} while(d!=2||x<0||x>R-1||y<0||y>R-1);
 
-	
 	srand(time(NULL));
 	int m,n;
 	int suma=0;

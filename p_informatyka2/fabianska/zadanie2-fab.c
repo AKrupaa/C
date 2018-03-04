@@ -9,17 +9,8 @@ int licz(char tab[10][20], int ktory)	//np. dla jednego calego rzedu ('ktory'ego
 		for(i=0;i<20;i++)
 		{
 			if(islower(tab[ktory][i])) suma++;
-		//	printf("%i SUMA=%i\n",i+1,suma);
 		}
 		
-	//	printf("TU:\n%i\n",tab[0][14]);
-	//	printf("%i\n",tab[0][15]);
-	//	printf("%i\n",tab[0][16]);
-	//	printf("%i\n",tab[0][17]);
-	//	printf("%i\n",tab[0][18]);
-	//	printf("%i\n",tab[0][19]);
-	//	printf("%i\nKONIEC\n",tab[0][20]); ?forfun
-	
 		return suma;
 }
 

@@ -10,7 +10,7 @@ int main()
 	int intTab[5]={0};
 	
 	int *pInt;
-//*wl=*wl+2;
+
 	pInt=&intWrt00;
 	
 	*pInt=*pInt+10;
@@ -25,18 +25,21 @@ int main()
 	{
 		*(pInt+i)=110+i;
 	}
-	
+		printf("Zmienne:\n");
 	printf("%i ", intWrt00);
 	printf("%i ", intWrt01);
 	printf("%i ", intWrt02);
 	printf("%i ", intWrt03);
-	printf("%i ", intWrt04);
+	printf("%i", intWrt04);
+		printf("\n\nTABLICA:\n");
+	for(i=0;i<5;i++)
+	printf("%i: %i\n",i+1,*(pInt+i));
 	
-	printf("%i ", *(pInt+0));
-	printf("%i ", intTab[1]);
-	printf("%i ", *(pInt+2));
-	printf("%i ", *(pInt+3));
-	printf("%i ", *(pInt+4));
+//	printf("%i ", *(pInt+0)); to jest rownowazne z :
+//	printf("%i ", intTab[1]); <--- z tym wypisaniem
+//	printf("%i ", *(pInt+2));
+//	printf("%i ", *(pInt+3));
+//	printf("%i ", *(pInt+4));
 	
 	
 	return 0;

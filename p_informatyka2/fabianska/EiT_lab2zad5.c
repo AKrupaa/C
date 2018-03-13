@@ -36,14 +36,15 @@ int main()
 	
 	switch(temp)
 	{
-		case 1: lower(&wtab[0]);
+		case 1: lower(&wtab[0]); wypisz(wtab);
 		break;
-		case 2: upper(&wtab[0]);
+		case 2: upper(&wtab[0]); wypisz(wtab);
 		break;
-		default: printf("Wybieraj madrze!\n");	
+		default: printf("Wybieraj madrze!\n");
+		break;
 	}	
 	
-	wypisz(wtab);
+	
 	
 	return 0;
 }

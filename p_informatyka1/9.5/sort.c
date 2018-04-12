@@ -46,7 +46,7 @@ extern void bubble_sort_asc(int tab[], int size)
 
 extern void bubble_sort(int tab[], int size, int dir)
 {
-	// Przyjmij, ¿e 1 oznacza rosn¹co, a 2 malej¹co.
+	// Przyjmij, ?e 1 oznacza rosn?co, a 2 malej?co.
 	if(dir==1) bubble_sort_asc(tab,size);
 	if(dir==2) bubble_sort_desc(tab,size);
 }
@@ -124,7 +124,7 @@ extern void selection_sort_asc(int tab[], int size)
 
 extern void selection_sort(int tab[], int size, int dir)
 {
-	// Przyjmij, ¿e 1 oznacza rosn¹co, a 2 malej¹co.
+	// Przyjmij, ?e 1 oznacza rosn?co, a 2 malej?co.
 	if(dir==1) selection_sort_asc(tab,size);
 	if(dir==2) selection_sort_desc(tab,size);
 }
@@ -172,7 +172,7 @@ extern void insertion_sort_asc(int tab[], int size)
 
 extern void insertion_sort(int tab[], int size, int dir)
 {
-	// Przyjmij, ¿e 1 oznacza rosn¹co, a 2 malej¹co.
+	// Przyjmij, ?e 1 oznacza rosn?co, a 2 malej?co.
 	if(dir==1) insertion_sort_asc(tab,size);
 	if(dir==2) insertion_sort_desc(tab,size);
 }

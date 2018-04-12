@@ -66,18 +66,20 @@ int main()
 	int j;
 	int temp;
 	int posortowane=0;
-	int zamiana=0;
-	for(i=0;i<MAX;i++)
+	for(i=0;i<MAX&&posortowane==0;i++)
 	{
+		int zamiana=0;
 		for(j=0;j<MAX-1-i;j++)
-		{
+		{	
 			if(*(wtab+j)<*(wtab+j+1))
 			{
 				temp=*(wtab+j+1);
 				*(wtab+j+1)=*(wtab+j);
 				*(wtab+j)=temp;
+				zamiana=1;
 			}
 		}
+		if(zamiana==0)	posortowane=1;
 	}
 	
 	printf("\n");
@@ -123,7 +125,6 @@ int main()
 				break;
 			}
 		}
-
 	}	
 	
 	return 0;

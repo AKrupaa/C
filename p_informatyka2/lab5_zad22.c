@@ -14,7 +14,7 @@ int main()
 	
 	FILE* streamW;
 	FILE* streamA;
-	streamW = fopen("sort.txt", "w");
+	//streamW = fopen("sort.txt", "w");
 	
 	if ( ( streamW = fopen( "sort.txt", "w" ) ) == NULL )
 	{
@@ -37,7 +37,7 @@ int main()
 	fclose(streamW);
 	
 	
-	streamA = fopen("sort.txt", "a");
+	//streamA = fopen("sort.txt", "a");
 	
 	if ( ( streamA = fopen( "sort.txt", "a" ) ) == NULL )
 	{
@@ -89,14 +89,15 @@ int main()
 	{
 		fscanf(streamR,"%c", &a);
 		tab1[counter++]=a;
-		printf("%c ",a);
+		printf("%c",a);
 		
 	}
+	counter--; //bo sprawdzam EOF a potem wykonuje instukcje ... u know.
 	
 	printf("\n HI \n");
 	for(i=0;i<counter;i++)
 	{
-		printf("%c ",tab1[i]);
+		printf("%c",tab1[i]);
 	}
 	
 	fclose(streamR);

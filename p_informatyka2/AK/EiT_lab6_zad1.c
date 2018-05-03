@@ -108,7 +108,7 @@ int main()
 	FILE* stream2;
 	if((stream2=fopen("usungo.txt","w"))==NULL)			//tworze jednoczesnie plik :)
 	{
-		printf("B³ad - nie pliku do usuniecia.");
+		printf("B³ad - nie ma pliku do usuniecia.");
 		return 0;
 	}
 	

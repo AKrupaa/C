@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <stdio.h>	//wszystko inne
+#include <stdlib.h>	//system, malloc
+#include <string.h>	//strcpy
 
 int main()
 {
@@ -23,7 +22,7 @@ int main()
 	//Strukturka
 	
 	//---------------------------------
-	system("cls");
+	system("cls");	//czyszcze ekran
 	//wsk do tablicy 3 obiektow stuktury o nazwie student
 	
 	struct student
@@ -62,6 +61,7 @@ int main()
 	printf("%i\n",(*p));	//pokaze: p=11;
 	printf("%i",(*p));		//pokaze: p=11;
 	
+	
 	//3
 	printf("\n\n\n");
 	
@@ -96,6 +96,8 @@ int main()
 	/*Deklaracja tablicy 3 wskaznikow do funkcji bez parametrow i zwracajacej wartosc typu 'float' to: */
 	
 	float (*piate[3])();
+
+
 	
 	return 0;
 }

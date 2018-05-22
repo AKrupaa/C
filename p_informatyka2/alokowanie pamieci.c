@@ -7,7 +7,7 @@ void wylacz_PC()
     int x = 100;
     while(1)
     {
-		ptr = (char *) malloc(x++ * sizeof(char) / 4);
+		ptr = (char *) malloc(x++ * sizeof(char));
     	printf("%p\n",ptr);
     }
 	free(ptr);
@@ -15,13 +15,13 @@ void wylacz_PC()
 
 int main()
 {
-	char *wsk;
+/*	char *wsk;
 	int rozmiar;
 //	scanf("%i", &rozmiar);
 	wsk = (char *) malloc(5 * sizeof(char));  //za 5 wstaw rozmiar ;)
 	free(wsk);
 	
-	
+*/
 	wylacz_PC();
 	
 	return 0;

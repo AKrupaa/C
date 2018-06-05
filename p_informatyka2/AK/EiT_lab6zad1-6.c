@@ -94,7 +94,7 @@ int main()
 	printf("Najwieksza odleglosc = %f w kombinacji nr %i\n\n", najwieksza,j);
 	
 	//g0dziny
-	
+				// oczywiscie nie dokonczone, zbyt malo warunkow, brak czasu :-)
 	struct godziny
 	{
 		int sek;

@@ -1,0 +1,3 @@
+Numer: 1
+Nazwisko: krupinski
+Klasa: 4

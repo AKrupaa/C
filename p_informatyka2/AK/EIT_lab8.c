@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
+#include <ctype.h>
 
 struct telemetria{
 unsigned paliwo: 1;
@@ -28,7 +30,7 @@ void enumbul()
 	unsigned wybor;
 	printf("Wcisnij klawisz: ");
 	scanf("%i", &wybor);
-	
+	fflush(stdin);
 	if(wybor==samochod)
 	printf("samochod");
 	else if(wybor==tramwaj)
@@ -44,7 +46,7 @@ void enumbul()
 }
 
 
-typedef enum{TAK,TRUE=1, NIE,FALSE=0} boolean;
+typedef enum{TRUE=1, FALSE=0} boolean;
 
 void tak_nie()
 {
@@ -54,7 +56,7 @@ void tak_nie()
 	scanf("%c", &ch);
 	
 	if(isdigit(ch))
-		binarny=TAK;
+		binarny=TRUE;
 	else
 	binarny = FALSE;
 	

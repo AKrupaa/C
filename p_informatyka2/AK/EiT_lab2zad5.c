@@ -36,7 +36,7 @@ int main()
 	
 	switch(temp)
 	{
-		case 1: lower(&wtab[0]); wypisz(wtab);
+		case 1: lower(wtab); wypisz(wtab);
 		break;
 		case 2: upper(&wtab[0]); wypisz(wtab);
 		break;

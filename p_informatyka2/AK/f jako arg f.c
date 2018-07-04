@@ -4,9 +4,6 @@ float square(float a, float b) {
         return ((a) * (b));
 }
 
-
-
-
 float volume_without_typedef( float *a, float *b, float *h, float( * pAction )( float, float ) ) {
         return ( pAction( *a, *b ) * *h );
 }

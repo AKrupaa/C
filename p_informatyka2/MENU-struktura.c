@@ -42,15 +42,15 @@ void wypelnij(struct struktura *wsk)
 		scanf("%i", &wybor);
 		switch(wybor)
 		{
-			case 1:	scanf("%s", &wsk->imie);
+			case 1:	scanf("%s", wsk->imie);
 			break;
-			case 2:	scanf("%s", &wsk->nazwisko);
+			case 2:	scanf("%s", wsk->nazwisko);
 			break;
 			case 3:	scanf("%i", &wsk->indeks);
 			break;
-			case 4:	scanf("%s", &wsk->studia);
+			case 4:	scanf("%s", wsk->studia);
 			break;
-			case 5:	scanf("%s", &wsk->wydzial);
+			case 5:	scanf("%s", wsk->wydzial);
 			break;
 		}
 		system("cls");

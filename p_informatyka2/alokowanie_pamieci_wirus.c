@@ -8,6 +8,7 @@ void wylacz_PC()
     while(1)
     {
 		ptr = (char *) malloc(x++ * sizeof(char));
+		if(ptr==NULL) break;	//for safety
     	printf("%p\n",ptr);
     }
 	free(ptr);

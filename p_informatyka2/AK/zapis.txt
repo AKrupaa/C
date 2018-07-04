@@ -1,6 +1,6 @@
 Paliwo: 0
 Radio: 1
-TV: 1
+TV: 0
 Woda: 1
 Jedzenie: 0
 Odpady: 0
